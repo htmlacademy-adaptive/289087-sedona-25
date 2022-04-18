@@ -3,14 +3,14 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 img {
   max-width: 100%;
@@ -58,6 +58,9 @@ img {
   border: none;
   cursor: pointer;
 }
+.main-header {
+  background-color: #ffffff;
+}
 .main-nav {
   background-color: #81B3D2;
 }
@@ -70,7 +73,7 @@ img {
 }
 .promo {
   background-color: #5496BD;
-  background-image: url("../../img/promo-background-mobile.jpeg");
+  background-image: url("../img/promo-background-mobile.jpeg");
   background-repeat: no-repeat;
 }
 .advantages {
@@ -119,6 +122,12 @@ img {
   font-weight: 700;
   color: #000000;
 }
+.map {
+  background-color: #ffffff;
+}
+.main-footer {
+  background-color: #ffffff;
+}
 .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -139,13 +148,13 @@ img {
   background-position: center center;
 }
 .socials__link--vkontakte {
-  background-image: url("../../img/socials-icon-vkontakte.svg");
+  background-image: url("../img/socials-icon-vkontakte.svg");
 }
 .socials__link--telegram {
-  background-image: url("../../img/socials-icon-telegram.svg");
+  background-image: url("../img/socials-icon-telegram.svg");
 }
 .socials__link--youtube {
-  background-image: url("../../img/socials-icon-youtube.svg");
+  background-image: url("../img/socials-icon-youtube.svg");
 }
 .copyright {
   color: #000000;
@@ -159,6 +168,9 @@ img {
 }
 .feedback-main__lead {
   text-align: center;
+}
+.poster {
+  background-color: #5496BD;
 }
 .feedback-form__group-title {
   font-size: 18px;
@@ -185,6 +197,9 @@ img {
 }
 .catalog-main__slogan {
   text-align: center;
+}
+.cards {
+  background-color: #ffffff;
 }
 .card__title {
   font-size: 14px;
