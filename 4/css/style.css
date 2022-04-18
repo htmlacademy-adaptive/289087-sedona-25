@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+}
+.page__body {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+}
+.button {
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #81B3D2;
+  border: none;
+  cursor: pointer;
+}
+.main-nav {
+  background-color: #81B3D2;
+}
+.main-nav__link {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+.promo {
+  background-color: #5496BD;
+  background-image: url("../../img/promo-background-mobile.jpeg");
+  background-repeat: no-repeat;
+}
+.advantages {
+  text-align: center;
+}
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages__item {
+  background-color: #D6D6D6;
+}
+.advantages__item--illustrated {
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+.advantages__heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.advantages__sublist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+}
+.advantages__sublist-item {
+  color: #333333;
+  background-color: #ffffff;
+}
+.accomodations-search {
+  text-align: center;
+}
+.accomodations-search__heading {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.socials__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.socials__link--vkontakte {
+  background-image: url("../../img/socials-icon-vkontakte.svg");
+}
+.socials__link--telegram {
+  background-image: url("../../img/socials-icon-telegram.svg");
+}
+.socials__link--youtube {
+  background-image: url("../../img/socials-icon-youtube.svg");
+}
+.copyright {
+  color: #000000;
+}
+.feedback-main__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.feedback-main__lead {
+  text-align: center;
+}
+.feedback-form__group-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+.feedback-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.feedback-form__field-label--radio,
+.feedback-form__field-label--checkbox {
+  font-weight: 700;
+  text-transform: none;
+}
+.catalog-main__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.catalog-main__slogan {
+  text-align: center;
+}
+.card__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+.card__author {
+  text-transform: none;
+}
+.card__likes {
+  font-weight: 700;
+}
+.presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.presentation__lead {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
