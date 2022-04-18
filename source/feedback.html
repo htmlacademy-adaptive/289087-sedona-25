@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="" width="" height="" alt="Логотип города Седоны">
+    <a class="main-header__logo" href="index.html">
+      <img src="./img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -58,19 +59,19 @@
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--radio" type="radio" name="feedback-general-opinion" value="positive" checked>
-              <span class="feedback-form__field-label">Скорее положительное</span>
+              <span class="feedback-form__field-label feedback-form__field-label--radio">Скорее положительное</span>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--radio" type="radio" name="feedback-general-opinion" value="negative">
-              <span class="feedback-form__field-label">Скорее отрицательное</span>
+              <span class="feedback-form__field-label feedback-form__field-label--radio">Скорее отрицательное</span>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--radio" type="radio" name="feedback-general-opinion" value="difficult to answer">
-              <span class="feedback-form__field-label">Затрудняюсь ответить</span>
+              <span class="feedback-form__field-label feedback-form__field-label--radio">Затрудняюсь ответить</span>
             </label>
           </li>
         </ul>
@@ -81,25 +82,25 @@
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--checkbox" type="checkbox" name="Devil's bridge" checked>
-              <span class="feedback-form__field-label">Мост Дьявола</span>
+              <span class="feedback-form__field-label feedback-form__field-label--checkbox">Мост Дьявола</span>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--checkbox" type="checkbox" name="Bell Rock" checked>
-              <span class="feedback-form__field-label">Гора-Колокол</span>
+              <span class="feedback-form__field-label feedback-form__field-label--checkbox">Гора-Колокол</span>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--checkbox" type="checkbox" name="Slide Rock State Park" checked>
-              <span class="feedback-form__field-label">Слайд-парк</span>
+              <span class="feedback-form__field-label feedback-form__field-label--checkbox">Слайд-парк</span>
             </label>
           </li>
           <li class="feedback-form__item">
             <label class="feedback-form__field">
               <input class="feedback-form__field-control feedback-form__field-control--checkbox" type="checkbox" name="Red Rock Country">
-              <span class="feedback-form__field-label">Красные скалы</span>
+              <span class="feedback-form__field-label feedback-form__field-label--checkbox">Красные скалы</span>
             </label>
           </li>
         </ul>
@@ -123,7 +124,7 @@
         <li class="socials__item"><a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a></li>
       </ul>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
