@@ -1,5 +1,22 @@
 .promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 389px;
+
   background-color: @blue-dark-active;
   background-image: url("../img/promo-background-mobile.jpeg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../img/promo-background-tablet.jpeg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/promo-background-desktop.jpeg");
+  }
 }
