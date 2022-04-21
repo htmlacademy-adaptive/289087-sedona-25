@@ -1,3 +1,20 @@
 .copyright {
+  display: flex;
+  align-items: center;
+
   color: @black-basic;
+}
+
+.copyright__image {
+  fill: @black-basic;
+}
+
+.copyright__link {
+  display: inline-block;
+  width: 27px;
+  height: 35px;
+
+  &:hover .copyright__image {
+    fill: @blue-light-basic;
+  }
 }
