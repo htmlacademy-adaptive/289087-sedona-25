@@ -514,7 +514,7 @@ img {
   align-items: center;
   height: 158px;
   background-color: #5496BD;
-  background-image: url("../../img/promo-background-mobile.jpeg");
+  background-image: url("../img/promo-background-mobile.jpeg");
   background-position: bottom;
 }
 @media (min-width: 1200px) {
