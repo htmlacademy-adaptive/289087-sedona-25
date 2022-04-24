@@ -15,12 +15,28 @@
   color: @black-basic;
 }
 
-.advantages__list {
-  .list-style-reset;
+.advantages__wrapper {
+  &--background-blue {
+    color: @white-basic;
+    background-color: @blue-light-basic;
+  }
+
+  &--background-grey {
+    background-color: @grey-background;
+  }
 }
 
-.advantages__inner {
-  padding: 40px 22px 40px 18px;
+.advantages__list {
+  .list-style-reset;
+
+  min-width: 282px;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    &--paddings {
+      padding: 0 20px;
+    }
+  }
 }
 
 .advantages__image {
@@ -41,14 +57,22 @@
   }
 }
 
+.advantages__text {
+  margin: 0;
+}
+
+.advantages__heading--white {
+  color: @white-basic;
+}
+
 .advantages__item {
   box-sizing: border-box;
+  padding: 0;
 
-  background-color: @grey-background;
+  background-repeat: no-repeat;
 
-  &--illustrated {
-    color: @white-basic;
-    background-color: @blue-light-basic;
+  &--paddings {
+    padding: 40px 22px 40px 18px;
   }
 
   @media (max-width: @mobile-width-only) {
@@ -68,31 +92,9 @@
       right: 18px;
       height: 1px;
 
-      background-color: @grey-background;
+      background-color: @grey-line-advantages;
     }
   }
-}
-
-.advantages__text {
-  margin: 0;
-}
-
-.advantages__heading--white {
-  color: @white-basic;
-}
-
-.advantages__sublist {
-  .list-style-reset;
-
-  padding: 23px 0 0;
-
-  background-color: @white-basic;
-}
-
-.advantages__sublist-item {
-  color: @dark-basic;
-  background-color: @white-basic;
-  background-repeat: no-repeat;
 
   &--house {
     background-image: url("../img/advantages-house.svg");
@@ -106,72 +108,49 @@
     background-image: url("../img/advantages-present.svg");
   }
 
-  @media (max-width: @mobile-width-only) {
-    padding-left: 42px;
-    margin-bottom: 22px;
+  &--illustrated {
+    @media (max-width: @mobile-width-only) {
+      padding-left: 42px;
+      margin-bottom: 22px;
 
-    text-align: left;
-    background-position: left top;
-    background-size: 40px 40px;
-  }
+      text-align: left;
+      background-position: left top;
+      background-size: 40px 40px;
+    }
 
-  @media (min-width: @tablet-width) {
-    width: 256px;
-    padding: 160px 31px 58px;
+    @media (min-width: @tablet-width) {
+      width: 256px;
+      padding: 160px 31px 58px;
 
-    background-position: center top 59px;
-  }
+      background-position: center top 59px;
+    }
 
-  @media (min-width: @desktop-width) {
-    width: 400px;
-    padding: 160px 58px 58px;
+    @media (min-width: @desktop-width) {
+      width: 400px;
+      padding: 160px 58px 58px;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__list {
+    width: 768px;
     display: grid;
-    grid-template-columns: repeat(3, 256px);
-    grid-template-rows: auto auto auto;
-  }
+    margin: 0 auto;
 
-  .advantages__item--two-rows {
-    grid-column: 1/4;
-
-    display: grid;
-    grid-template-columns: repeat(3, 256px);
-    grid-template-rows: auto auto;
-
-    & .advantages__inner {
-      grid-column: 1/2;
+    &--town {
+      grid-template-columns: 256px 512px;
     }
 
-    & .advantages__image {
-      grid-column: 2/4;
+    &--three-column {
+      grid-template-columns: repeat(3, 256px);
     }
 
-    & .advantages__sublist {
-      grid-column: 1/4;
-
-      display: flex;
+    &--bridge {
+      grid-template-columns: 512px 256px;
     }
   }
 
-  .advantages__item--bridge {
-    grid-column: 1/4;
-
-    display: grid;
-    grid-template-columns: 512px 256px;
-    grid-template-rows: auto;
-
-    & .advantages__inner {
-      grid-column: 2/3;
-    }
-
-    & .advantages__image {
-      grid-column: 1/2;
-    }
-  }
 
   .advantages__item--lower {
     padding: 42px;
@@ -185,15 +164,19 @@
 
 @media (min-width: @desktop-width) {
   .advantages__list {
-    grid-template-columns: repeat(3, 400px);
-  }
+    width: 1200px;
 
-  .advantages__item--two-rows {
-    grid-template-columns: repeat(3, 400px);
-  }
+    &--town {
+      grid-template-columns: 400px 800px;
+    }
 
-  .advantages__item--bridge {
-    grid-template-columns: 800px 400px;
+    &--three-column {
+      grid-template-columns: repeat(3, 400px);
+    }
+
+    &--bridge {
+      grid-template-columns: 800px 400px;
+    }
   }
 
   .advantages__item--lower {

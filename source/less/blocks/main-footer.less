@@ -1,4 +1,8 @@
 .main-footer {
+  background-color: @white-basic;
+}
+
+.main-footer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +23,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer {
+  .main-footer__wrapper {
+    width: 648px;
     flex-direction: row;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: 960px;
   }
 }
