@@ -1,3 +1,14 @@
 .poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 158px;
+
   background-color: @blue-dark-active;
+  background-image: url("../img/promo-background-mobile.jpeg");
+  background-position: bottom;
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

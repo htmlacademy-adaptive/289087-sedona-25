@@ -8,7 +8,8 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
       <img src="./img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
     </a>
     <nav class="main-nav">
@@ -17,59 +18,80 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="#">Фото и видео</a></li>
+        </ul>
+        <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="feedback.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
+    </div>
   </header>
   <main class="catalog-main">
-    <div class="catalog-main__poster poster"></div>
-    <h1 class="catalog-main__title">Фото и видео</h1>
-    <p class="catalog-main__slogan">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    <div class="cards">
-      <section class="cards__item card">
-        <h2 class="card__title">Неродные просторы</h2>
-        <img class="card__image" src="./img/gallery/gallery-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
-        <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
-        <p class="card__likes">1350</p>
-      </section>
-      <section class="cards__item card">
-        <h2 class="card__title">Местная растительность</h2>
-        <img class="card__image" src="./img/gallery/gallery-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
-        <p class="card__author">Автор фото: <span class="card__author-name">Сергей</span></p>
-        <p class="card__likes">143</p>
-      </section>
-      <section class="cards__item card">
-        <h2 class="card__title">Дорога на север</h2>
-        <img class="card__image" src="./img/gallery/gallery-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
-        <p class="card__author">Автор фото: <span class="card__author-name">Петр</span></p>
-        <p class="card__likes">96</p>
-      </section>
-      <section class="cards__item card">
-        <h2 class="card__title">Мост дьявола</h2>
-        <img class="card__image" src="./img/gallery/gallery-4-mobile.jpeg" width="280" height="280" alt="Мост дьявола">
-        <p class="card__author">Автор фото: <span class="card__author-name">Антон</span></p>
-        <p class="card__likes">254</p>
+    <div class="catalog-main__poster poster">
+      <img src="./img/sedona.svg" width="229" height="39" alt="Sedona">
+    </div>
+    <div class="catalog-main__wrapper">
+      <h1 class="catalog-main__title">Фото и видео</h1>
+      <p class="catalog-main__slogan">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="cards">
+        <section class="cards__item cards__item--wide card">
+          <img class="card__image" src="./img/gallery/gallery-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+          <div class="card__inner">
+            <h2 class="card__title">Неродные просторы</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
+            <p class="card__likes">1350</p>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <img class="card__image" src="./img/gallery/gallery-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+          <div class="card__inner">
+            <h2 class="card__title">Местная растительность</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Сергей</span></p>
+            <p class="card__likes">143</p>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <img class="card__image" src="./img/gallery/gallery-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+          <div class="card__inner card__inner--background-nordic">
+            <h2 class="card__title">Дорога на север</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Петр</span></p>
+            <p class="card__likes">96</p>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <img class="card__image" src="./img/gallery/gallery-4-mobile.jpeg" width="280" height="280" alt="Мост дьявола">
+          <div class="card__inner">
+            <h2 class="card__title">Мост дьявола</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Антон</span></p>
+            <p class="card__likes">254</p>
+          </div>
+        </section>
+      </div>
+      <section class="presentation">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="presentation__video" controls src="" poster="./img/video-poster-mobile.jpg"></video>
       </section>
     </div>
-    <section class="presentation">
-      <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-      <p class="presentation__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="presentation__video" controls src="" poster="./img/video-poster-mobile.jpg"></video>
-    </section>
-
   </main>
   <footer class="main-footer">
-    <div class="main-footer__hashtag hashtag">#visitsedona</div>
-    <ul class="main-footer__socials socials">
-      <li class="socials__item"><a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
-      <li class="socials__item"><a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a></li>
-      <li class="socials__item"><a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a></li>
-    </ul>
-    <div class="main-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__hashtag hashtag">#visitsedona</div>
+      <ul class="main-footer__socials socials">
+        <li class="socials__item"><a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+        <li class="socials__item"><a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a></li>
+        <li class="socials__item"><a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a></li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__image" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1338 2H16.0446L4 3.19062V24.1965L16.0446 31L28 24.1965V3.19062L16.1338 2ZM26.3048 12.2903L16.0446 6.50733V6.42229H15.9554L15.8662 6.33724V6.42229L5.69517 12.2903V4.63636L15.9554 3.61584L26.3048 4.63636V12.2903ZM15.9554 7.78299L26.2156 13.4809L22.2007 15.6921L15.8662 12.1202V13.3109L21.1301 16.2874L20.3271 16.7126L15.8662 14.1613V15.3519L19.2565 17.3079L18.5428 17.7331L15.8662 16.2023V17.393L17.5613 18.3284L15.9554 19.2639L5.78439 13.566L15.9554 7.78299ZM5.69517 14.8416L15.8662 20.6246V21.4751L8.81784 17.478V18.6686L15.9554 22.7507V23.6862L8.81784 19.6891V20.8798L15.9554 24.9619L23.1822 20.7947V16.3724L26.2156 14.6716V23.176L15.9554 29.044L5.69517 23.261V14.8416Z"/>
+            </svg>
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -9,3 +9,30 @@
 .catalog-main__slogan {
   text-align: center;
 }
+
+.catalog-main__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-main__wrapper {
+    width: 648px;
+  }
+
+  .catalog-main__title {
+    max-width: 458px;
+    margin: 62px auto 30px;
+  }
+
+  .catalog-main__slogan {
+    max-width: 458px;
+    margin: 0 auto 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-main__wrapper {
+    width: 1200px;
+  }
+}

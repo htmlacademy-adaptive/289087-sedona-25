@@ -5,6 +5,19 @@
   background-color: @white-basic;
 }
 
+.main-header__wrapper {
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
+}
+
 .main-header__logo {
   position: absolute;
   top: 0;
