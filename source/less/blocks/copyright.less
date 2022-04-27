@@ -1,8 +1,7 @@
-.copyright {
-  display: flex;
-  align-items: center;
+.copyright__text {
+  margin-right: 4px;
 
-  color: @black-basic;
+  color: inherit;
 }
 
 .copyright__image {
@@ -10,11 +9,27 @@
 }
 
 .copyright__link {
-  display: inline-block;
-  width: 27px;
-  height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: @black-basic;
+  text-decoration: none;
+
+  &:hover {
+    color: @blue-light-basic;
+  }
 
   &:hover .copyright__image {
     fill: @blue-light-basic;
+  }
+
+  &:focus,
+  &:active {
+    color: @grey-copyright-active;
+  }
+
+  &:focus .copyright__image,
+  &:active .copyright__image {
+    fill: @grey-copyright-active;
   }
 }

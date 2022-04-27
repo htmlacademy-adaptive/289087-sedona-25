@@ -12,23 +12,47 @@
 }
 
 .socials__link {
+  position: relative;
   display: block;
   width: 48px;
   height: 48px;
 
   background-color: @blue-light-basic;
-  background-repeat: no-repeat;
-  background-position: center center;
 
-  &--vkontakte {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--vkontakte::before {
     background-image: url("../img/socials-icon-vkontakte.svg");
   }
 
-  &--telegram {
+  &--telegram::before {
     background-image: url("../img/socials-icon-telegram.svg");
   }
 
-  &--youtube {
+  &--youtube::before {
     background-image: url("../img/socials-icon-youtube.svg");
+  }
+
+  &:hover {
+    background-color: @blue-dark-hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @blue-dark-active;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
