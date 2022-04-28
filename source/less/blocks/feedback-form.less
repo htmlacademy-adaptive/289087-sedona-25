@@ -194,12 +194,7 @@
   font-weight: 700;
 
   background-color: @grey-light-basic;
-  border: none;
-
-  &[type="text"],
-  &--textarea {
-    border: 4px solid transparent;
-  }
+  border: 4px solid transparent;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -207,6 +202,7 @@
 
   &--textarea {
     min-height: 150px;
+    resize: none;
   }
 
   &--phone,
@@ -226,17 +222,15 @@
     background-image: url("../img/icons-mail.svg"), linear-gradient(to left, @grey-basic 58px, transparent 58px);
   }
 
-  &[type="text"]:hover,
-  &--textarea:hover {
+  &:hover {
     background-color: @grey-background-nordic;
   }
 
-  &[type="text"]:focus,
-  &--textarea:focus,
-  &[type="text"]:active,
-  &--textarea:active {
+  &:focus,
+  &:active {
     background-color: @white-basic;
     border: 4px solid @grey-background-nordic;
+    outline: none;
   }
 }
 
