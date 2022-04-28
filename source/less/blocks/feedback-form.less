@@ -50,6 +50,15 @@
     &--column-right {
       grid-column: 2/3;
     }
+
+    &--line {
+      border-top: 1px solid @grey-line-form;
+
+      & .feedback-form__group-title {
+        width: 402px;
+        box-sizing: border-box;
+      }
+    }
   }
 
   .feedback-form__field {
@@ -65,12 +74,12 @@
   .feedback-form__list {
     width: 575px;
     margin: 0 auto;
+    box-sizing: border-box;
 
     &--columns-two {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-auto-flow: row;
-      row-gap: 16px;
     }
   }
 
@@ -95,7 +104,6 @@
       grid-template-columns: repeat(3, auto);
       grid-auto-flow: row;
       column-gap: 28px;
-      row-gap: 16px;
       padding: 0 53px;
     }
 
@@ -104,7 +112,6 @@
       grid-template-columns: repeat(4, auto);
       grid-auto-flow: row;
       column-gap: 64px;
-      row-gap: 16px;
       padding: 0 44px;
     }
   }
@@ -132,7 +139,7 @@
 
 .feedback-form__group-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
   padding: 0;
   padding-top: 10px;
 
@@ -140,6 +147,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  color: @black-basic;
 }
 
 .feedback-form__field {
@@ -149,7 +157,12 @@
 
   &--radio,
   &--checkbox {
+    position: relative;
     flex-direction: row;
+    align-items: center;
+    min-height: 46px;
+
+    padding-left: 64px;
   }
 }
 
@@ -161,12 +174,6 @@
   }
 }
 
-.feedback-form__field-control {
-  &--textarea {
-    min-height: 150px;
-  }
-}
-
 .feedback-form__button {
   width: 100%;
   padding: 16px;
@@ -175,4 +182,121 @@
 
 .feedback-form__legend {
   text-align: right;
+}
+
+.feedback-form__field-control {
+  padding: 16px;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  background-color: @grey-light-basic;
+  border: none;
+
+  &[type="text"],
+  &--textarea {
+    border: 4px solid transparent;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--textarea {
+    min-height: 150px;
+  }
+
+  &--phone,
+  &--email {
+    width: 100%;
+    padding-right: 74px;
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 20px center, right;
+  }
+
+  &--phone {
+    background-image: url("../img/icons-phone.svg"), linear-gradient(to left, @grey-basic 58px, transparent 58px);
+  }
+
+  &--email {
+    background-image: url("../img/icons-mail.svg"), linear-gradient(to left, @grey-basic 58px, transparent 58px);
+  }
+
+  &[type="text"]:hover,
+  &--textarea:hover {
+    background-color: @grey-background-nordic;
+  }
+
+  &[type="text"]:focus,
+  &--textarea:focus,
+  &[type="text"]:active,
+  &--textarea:active {
+    background-color: @white-basic;
+    border: 4px solid @grey-background-nordic;
+  }
+}
+
+.feedback-form__field-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  box-sizing: border-box;
+
+  background-color: @grey-light-basic;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 3px;
+  }
+}
+
+.feedback-form__field-control--radio:checked + .feedback-form__field-mark--radio {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: @dark-basic;
+    border-radius: 50%;
+  }
+}
+
+.feedback-form__field-control--checkbox:checked + .feedback-form__field-mark--checkbox {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-image: url("../img/icons-tick.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.feedback-form__field-control--radio:hover + .feedback-form__field-mark--radio,
+.feedback-form__field-control--checkbox:hover + .feedback-form__field-mark--checkbox {
+  background-color: @grey-background-nordic;
+}
+
+.feedback-form__field-control--radio:active + .feedback-form__field-mark--radio,
+.feedback-form__field-control--checkbox:active + .feedback-form__field-mark--checkbox {
+  background-color: @grey-input-active;
+
+  &::before {
+    opacity: 0.3;
+  }
 }
