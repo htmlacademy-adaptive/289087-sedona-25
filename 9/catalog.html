@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/289087-sedona-25/9/">
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+      <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+    </a>
+    <nav class="main-nav main-nav--nojs main-nav--closed">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Фото и видео</a></li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="feedback.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--no-border" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <main class="catalog-main">
+    <div class="catalog-main__poster poster">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/poster-sedona.svg">
+        <img class="poster__image" src="img/poster-sedona-mobile.svg" width="229" height="39" alt="Sedona">
+      </picture>
+    </div>
+    <div class="catalog-main__wrapper">
+      <h1 class="catalog-main__title">Фото и видео</h1>
+      <p class="catalog-main__slogan">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="cards">
+        <section class="cards__item cards__item--wide card">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop@1x.jpeg 1x, img/gallery/photo-1-desktop@2x.jpeg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet@1x.jpeg 1x, img/gallery/photo-1-tablet@2x.jpeg 2x">
+            <img class="card__image" src="img/gallery/photo-1-mobile@1x.jpeg" srcset="img/gallery/photo-1-mobile@2x.jpeg 2x" width="280" height="280" alt="Неродные просторы">
+          </picture>
+          <div class="card__inner">
+            <h2 class="card__title">Неродные просторы</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
+            <button class="card__likes" type="button">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4
+                9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26
+                23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7
+                8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+              </svg>
+              1350
+            </button>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop@1x.jpeg 1x, img/gallery/photo-2-desktop@2x.jpeg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet@1x.jpeg 1x, img/gallery/photo-2-tablet@2x.jpeg 2x">
+            <img class="card__image" src="img/gallery/photo-2-mobile@1x.jpeg" srcset="img/gallery/photo-2-mobile@2x.jpeg 2x" width="280" height="280" alt="Местная растительность">
+          </picture>
+          <div class="card__inner">
+            <h2 class="card__title">Местная растительность</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Сергей</span></p>
+            <button class="card__likes" type="button">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4
+                9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26
+                23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7
+                8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+              </svg>
+              143
+            </button>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop@1x.jpeg 1x, img/gallery/photo-3-desktop@2x.jpeg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet@1x.jpeg 1x, img/gallery/photo-3-tablet@2x.jpeg 2x">
+            <img class="card__image" src="img/gallery/photo-3-mobile@1x.jpeg" srcset="img/gallery/photo-3-mobile@2x.jpeg 2x" width="280" height="280" alt="Дорога на север">
+          </picture>
+          <div class="card__inner card__inner--background-nordic">
+            <h2 class="card__title">Дорога на север</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Петр</span></p>
+            <button class="card__likes" type="button">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4
+                9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26
+                23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7
+                8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+              </svg>
+              96
+            </button>
+          </div>
+        </section>
+        <section class="cards__item card">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop@1x.jpeg 1x, img/gallery/photo-4-desktop@2x.jpeg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet@1x.jpeg 1x, img/gallery/photo-4-tablet@2x.jpeg 2x">
+            <img class="card__image" src="img/gallery/photo-4-mobile@1x.jpeg" srcset="img/gallery/photo-4-mobile@2x.jpeg 2x" width="280" height="280" alt="Мост дьявола">
+          </picture>
+          <div class="card__inner">
+            <h2 class="card__title">Мост дьявола</h2>
+            <p class="card__author">Автор фото: <span class="card__author-name">Антон</span></p>
+            <button class="card__likes" type="button">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4
+                9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26
+                23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7
+                8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+              </svg>
+              254
+            </button>
+          </div>
+        </section>
+      </div>
+      <section class="presentation">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="presentation__video video">
+          <video src="" poster="img/video-poster-desktop.jpeg"></video>
+          <button class="video__controls" type="button">
+            <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white"/>
+            </svg>
+            <span class="visually-hidden">Проигрывать видео/Пауза</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__hashtag hashtag">#visitsedona</div>
+      <ul class="main-footer__socials socials">
+        <li class="socials__item"><a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+        <li class="socials__item"><a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a></li>
+        <li class="socials__item"><a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a></li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__image" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1338 2H16.0446L4 3.19062V24.1965L16.0446 31L28 24.1965V3.19062L16.1338 2ZM26.3048 12.2903L16.0446 6.50733V6.42229H15.9554L15.8662 6.33724V6.42229L5.69517 12.2903V4.63636L15.9554 3.61584L26.3048 4.63636V12.2903ZM15.9554 7.78299L26.2156 13.4809L22.2007 15.6921L15.8662 12.1202V13.3109L21.1301 16.2874L20.3271 16.7126L15.8662 14.1613V15.3519L19.2565 17.3079L18.5428 17.7331L15.8662 16.2023V17.393L17.5613 18.3284L15.9554 19.2639L5.78439 13.566L15.9554 7.78299ZM5.69517 14.8416L15.8662 20.6246V21.4751L8.81784 17.478V18.6686L15.9554 22.7507V23.6862L8.81784 19.6891V20.8798L15.9554 24.9619L23.1822 20.7947V16.3724L26.2156 14.6716V23.176L15.9554 29.044L5.69517 23.261V14.8416Z"/>
+            </svg>
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
