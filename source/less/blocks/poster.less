@@ -5,10 +5,33 @@
   height: 158px;
 
   background-color: @blue-dark-active;
-  background-image: url("../img/promo-background-mobile.jpeg");
-  background-position: bottom;
+  background-image: url("../img/promo-triangle.svg"), url("../img/poster-bg@1x.jpg");
+  background-position: bottom -1px center, bottom -7px center;
+  background-size: auto, 902px auto;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-triangle.svg"), url("../img/poster-bg@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+
+    background-position: bottom -1px center, bottom center;
+    background-size: auto, 1200px auto;
+  }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    height: 300px;
+  }
+}
+
+.poster__image {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
   }
 }
