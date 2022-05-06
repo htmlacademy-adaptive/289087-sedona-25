@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-        <img src="./img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
-      </a>
+          <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+        </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -29,7 +33,10 @@
     </header>
     <main>
       <div class="promo">
-        <img src="./img/promo-text-mobile.svg" width="282" height="214" alt="Welcome to Sedona">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/promo-text.svg">
+          <img class="promo__image" src="img/promo-text-mobile.svg" width="282" height="214" alt="Welcome to Sedona">
+        </picture>
       </div>
       <section class="advantages">
         <header class="advantages__header">
@@ -44,7 +51,7 @@
               <p class="advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/advantages-city.jpeg" width="320" height="260" alt="Город Седона">
+              <img class="advantages__image" src="img/advantages-city@1x.jpeg" srcset="img/advantages-city@2x.jpeg 2x" width="512" height="256" alt="Город Седона">
             </li>
           </ul>
         </div>
@@ -68,7 +75,10 @@
         <div class="advantages__wrapper advantages__wrapper--background-blue">
           <ul class="advantages__list advantages__list--bridge">
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/advantages-evil-bridge.jpeg" width="320" height="260" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.jpeg 1x, img/advantages-bridge-desktop@2x.jpeg 2x">
+                <img class="advantages__image advantages__image--position-top" src="img/advantages-bridge@1x.jpeg" srcset="img/advantages-bridge@2x.jpeg 2x" width="512" height="256" alt="Мост дьявола">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--paddings">
                 <h2 class="advantages__heading advantages__heading--white">Там есть мост дьявола</h2>

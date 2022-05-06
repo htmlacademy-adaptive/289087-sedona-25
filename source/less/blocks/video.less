@@ -1,0 +1,46 @@
+.video {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+
+  & video {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.video__controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 54px;
+  margin: auto;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  & svg {
+    fill-opacity: 70%;
+  }
+
+  &:hover {
+    & svg {
+      fill-opacity: 100%;
+    }
+  }
+}

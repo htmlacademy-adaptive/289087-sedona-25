@@ -169,6 +169,8 @@
 .feedback-form__field-label {
   &--radio,
   &--checkbox {
+    font-size: 18px;
+    line-height: 26px;
     font-weight: 700;
     text-transform: none;
   }
@@ -194,7 +196,7 @@
   font-weight: 700;
 
   background-color: @grey-light-basic;
-  border: 4px solid transparent;
+  border: none;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -229,8 +231,8 @@
   &:focus,
   &:active {
     background-color: @white-basic;
-    border: 4px solid @grey-background-nordic;
-    outline: none;
+    outline: 4px solid @grey-background-nordic;
+    outline-offset: -4px;
   }
 }
 
