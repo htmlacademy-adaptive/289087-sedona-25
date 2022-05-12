@@ -5,7 +5,7 @@
 }
 
 .copyright__image {
-  fill: @black-basic;
+  fill: currentColor;
 }
 
 .copyright__link {
@@ -19,17 +19,8 @@
     color: @blue-light-basic;
   }
 
-  &:hover .copyright__image {
-    fill: @blue-light-basic;
-  }
-
   &:focus,
   &:active {
     color: @grey-copyright-active;
-  }
-
-  &:focus .copyright__image,
-  &:active .copyright__image {
-    fill: @grey-copyright-active;
   }
 }

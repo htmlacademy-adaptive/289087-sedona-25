@@ -92,6 +92,7 @@
 
 @media (min-width: @desktop-width) {
   .feedback-form {
+    width: 960px;
     grid-template-columns: 480px 480px;
   }
 
@@ -109,7 +110,7 @@
 
     &--columns-four {
       display: grid;
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(4, max-content);
       grid-auto-flow: row;
       column-gap: 64px;
       padding: 0 44px;
