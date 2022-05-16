@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -14,21 +14,28 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-          <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+          <picture>
+            <source type="image/webp" srcset="img/logo-sedona.webp">
+            <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+          </picture>
         </a>
-      <nav class="main-nav main-nav--nojs main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
-          </ul>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="feedback.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--no-border" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+        <!--
+          модификатор main-nav--nojs для состояния без js,
+          main-nav--open для открытого состояния
+        -->
+        <nav class="main-nav main-nav--nojs main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="feedback.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--no-border" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -51,7 +58,10 @@
               <p class="advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="img/advantages-city@1x.jpeg" srcset="img/advantages-city@2x.jpeg 2x" width="512" height="256" alt="Город Седона">
+              <picture>
+                <source type="image/webp" srcset="img/advantages-city@1x.webp 1x, img/advantages-city@2x.webp 2x">
+                <img class="advantages__image" src="img/advantages-city@1x.jpg" srcset="img/advantages-city@2x.jpg 2x" width="512" height="256" alt="Город Седона">
+              </picture>
             </li>
           </ul>
         </div>
@@ -76,8 +86,10 @@
           <ul class="advantages__list advantages__list--bridge">
             <li class="advantages__item">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.jpeg 1x, img/advantages-bridge-desktop@2x.jpeg 2x">
-                <img class="advantages__image advantages__image--position-top" src="img/advantages-bridge@1x.jpeg" srcset="img/advantages-bridge@2x.jpeg 2x" width="512" height="256" alt="Мост дьявола">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantages-bridge@1x.webp 1x, img/advantages-bridge@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.jpg 1x, img/advantages-bridge-desktop@2x.jpg 2x">
+                <img class="advantages__image advantages__image--position-top" src="img/advantages-bridge@1x.jpg" srcset="img/advantages-bridge@2x.jpg 2x" width="512" height="256" alt="Мост дьявола">
               </picture>
             </li>
             <li class="advantages__item advantages__item--paddings">
