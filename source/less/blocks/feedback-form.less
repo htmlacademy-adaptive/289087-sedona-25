@@ -59,6 +59,10 @@
         box-sizing: border-box;
       }
     }
+
+    .feedback-form__group-title {
+      font-size: 21px;
+    }
   }
 
   .feedback-form__field {
@@ -109,11 +113,14 @@
     }
 
     &--columns-four {
-      display: grid;
-      grid-template-columns: repeat(4, max-content);
-      grid-auto-flow: row;
-      column-gap: 64px;
-      padding: 0 44px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 9px;
+
+      & .feedback-form__item {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
     }
   }
 
