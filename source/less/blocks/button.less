@@ -19,7 +19,11 @@
     background-color: @blue-dark-hover;
   }
 
-  &:focus,
+  &:focus-visible {
+    outline: 3px solid @blue-focus-outline;
+    outline-offset: 2px;
+  }
+
   &:active {
     color: fade(@white-basic, 30%);
     background-color: @blue-dark-active;

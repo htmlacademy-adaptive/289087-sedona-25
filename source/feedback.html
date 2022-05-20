@@ -17,15 +17,11 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source type="image/webp" srcset="img/logo-sedona.webp">
-          <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona.svg">
+          <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Седоны">
         </picture>
       </a>
-      <!--
-        модификатор main-nav--nojs для состояния без js,
-        main-nav--open для открытого состояния
-      -->
-      <nav class="main-nav main-nav--nojs main-nav--closed">
+      <nav class="main-nav main-nav--nojs main-nav--closed"> <!-- модификатор main-nav--nojs для состояния без js, main-nav--open для открытого состояния -->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -79,7 +75,7 @@
             <input class="feedback-form__field-control feedback-form__field-control--email" type="email" name="feedback-author-email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
-        <fieldset class="feedback-form__group feedback-form__group--line feedback-form__group--bottom-border"">
+        <fieldset class="feedback-form__group feedback-form__group--line feedback-form__group--bottom-border">
           <legend class="feedback-form__group-title">Ваше общее впечатление:</legend>
           <ul class="feedback-form__list feedback-form__list--columns-two feedback-form__list--columns-three">
             <li class="feedback-form__item">
@@ -105,9 +101,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group feedback-form__group--line feedback-form__group--bottom-border"">
+        <fieldset class="feedback-form__group feedback-form__group--line feedback-form__group--bottom-border">
           <legend class="feedback-form__group-title">Посещенные<br> достопримечательности:</legend>
-          <ul class="feedback-form__list feedback-form__list--columns-two feedback-form__list--columns-four">
+          <ul class="feedback-form__list feedback-form__list--columns-two feedback-form__list--tablet-480px feedback-form__list--columns-four">
             <li class="feedback-form__item">
               <label class="feedback-form__field feedback-form__field--checkbox">
                 <input class="feedback-form__field-control feedback-form__field-control--checkbox visually-hidden" type="checkbox" name="Devil's bridge" checked>
@@ -181,7 +177,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__image" width="32" height="32">
+          <svg class="copyright__image" width="27" height="35">
             <use href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
@@ -189,6 +185,22 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--closed">
+    <div class="modal__box modal__box--error">
+      <h2 class="modal__title modal__title--error">Что-то пошло не&nbsp;так!</h2>
+      <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button modal__button--error button" type="button">Ок</button>
+    </div>
+  </div>
+  <div class="modal modal--closed">
+    <div class="modal__box modal__box--success">
+      <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
+      <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>
