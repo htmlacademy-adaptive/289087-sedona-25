@@ -3,18 +3,58 @@
 }
 
 .accomodations-search__wrapper {
-  box-sizing: border-box;
-  max-width: 458px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 18px;
+  padding: 40px 18px 49px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 58px;
+
+    width: 494px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .accomodations-search__heading {
+  margin: 0;
+  margin-bottom: 24px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: @black-basic;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+
+    margin-bottom: 30px;
+  }
+}
+
+.accomodations-search__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.accomodations-search__text br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
 
 .accomodations-search__button {

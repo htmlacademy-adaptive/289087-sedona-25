@@ -1,0 +1,156 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__box {
+  position: relative;
+
+  width: 320px;
+  margin: auto;
+  margin-top: 0;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--error {
+    top: 116px;
+
+    padding-top: 43px;
+  }
+
+  &--success {
+    margin-top: auto;
+
+    padding-top: 39px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--error {
+      top: 283px;
+
+      width: 400px;
+    }
+
+    &--success {
+      top: 160px;
+
+      width: 640px;
+      margin-top: 0;
+      padding-top: 42px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--error {
+      top: 244px;
+
+      padding-top: 46px;
+    }
+
+    &--success {
+      top: 143px;
+
+      width: 640px;
+      padding-top: 42px;
+    }
+  }
+}
+
+.modal__title {
+  margin: 0 38px 25px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  color: @black-basic;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+
+    &--error {
+      margin: 0 46px 26px;
+    }
+
+    &--success {
+      margin: 0 99px 25px;
+    }
+  }
+}
+
+.modal__description {
+  margin: 0 41px 28px;
+  padding: 0;
+
+  text-align: center;
+
+  &--success {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--error {
+      margin: 0 46px 49px;
+    }
+
+    &--success {
+      margin: 0 99px 49px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  padding: 20px;
+  box-sizing: border-box;
+
+  background-color: @grey-light-basic;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.modal__button {
+  margin: 0 auto;
+  padding: 18px 60px 14px;
+  box-sizing: border-box;
+
+  font-size: 18px;
+
+  &--error {
+    width: 180px;
+    margin-bottom: 35px;
+  }
+
+  &--success {
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+
+    &--error {
+      width: 272px;
+      margin-bottom: 49px;
+    }
+
+    &--success {
+      width: 458px;
+    }
+  }
+}

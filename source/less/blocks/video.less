@@ -1,30 +1,49 @@
 .video {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 280px;
+  height: 177px;
+
+  background-image: url("../img/backgrounds/video-bg-mobile@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/video-bg-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
+
+    background-image: url("../img/backgrounds/video-bg-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/video-bg-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
     height: 500px;
-  }
 
-  & video {
-    display: block;
-    max-width: 100%;
+    background-image: url("../img/backgrounds/video-bg-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/video-bg-desktop@2x.jpg");
+    }
   }
+}
+
+.video video {
+  display: block;
+  max-width: 100%;
 }
 
 .video__controls {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 124px;
+  right: 108px;
+
   width: 48px;
   height: 54px;
   margin: auto;
@@ -34,14 +53,23 @@
   border: none;
   cursor: pointer;
 
-  & svg {
-    fill: @white-basic;
-    fill-opacity: 0.7;
+  &:focus-visible {
+    outline: 3px solid @blue-focus-outline;
+    outline-offset: 2px;
   }
 
-  &:hover {
-    & svg {
-      fill-opacity: 1;
-    }
+  @media (min-width: @tablet-width) {
+    left: 0;
+    right: 0;
   }
+}
+
+.video__controls svg {
+  fill: @white-basic;
+  fill-opacity: 0.7;
+}
+
+.video__controls:hover svg,
+.video__controls:focus svg {
+  fill-opacity: 1;
 }

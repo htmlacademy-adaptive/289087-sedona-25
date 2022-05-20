@@ -5,37 +5,30 @@
   height: 389px;
 
   background-color: @blue-dark-active;
-  background-image: url("../img/promo-triangle.svg"), url("../img/promo-bg@1x.jpg");
+  background-image: url("../img/promo-triangle.svg"), url("../img/backgrounds/promo-bg@1x.jpg");
 
   background-repeat: no-repeat;
   background-position: bottom -1px center, top -40px center;
   background-size: auto, 1200px auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-triangle.svg"), url("../img/promo-bg@2x.jpg");
+    background-image: url("../img/promo-triangle.svg"), url("../img/backgrounds/promo-bg@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    align-items: start;
+    height: 518px;
+
+    background-position: bottom -1px center, top center;
   }
 }
 
 .promo__image {
   display: block;
-}
 
-@media (min-width: @tablet-width) {
-  .promo {
-    height: 518px;
-
-    background-position: bottom -1px center, top center;
-  }
-
-  .promo__image {
+  @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo {
-    width: 1200px;
-    margin: 0 auto;
+    margin-top: 77px;
   }
 }

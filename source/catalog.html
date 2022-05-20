@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
@@ -15,15 +17,11 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source type="image/webp" srcset="img/logo-sedona.webp">
-          <img src="img/logo-sedona.png" width="185" height="96" alt="Логотип города Седоны">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona.svg">
+          <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Седоны">
         </picture>
       </a>
-      <!--
-        модификатор main-nav--nojs для состояния без js,
-        main-nav--open для открытого состояния
-      -->
-      <nav class="main-nav main-nav--nojs main-nav--closed">
+      <nav class="main-nav main-nav--nojs main-nav--closed"> <!-- модификатор main-nav--nojs для состояния без js, main-nav--open для открытого состояния -->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -64,7 +62,7 @@
             <h2 class="card__title">Неродные просторы</h2>
             <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
             <button class="card__likes" type="button">
-              <svg width="32" height="32">
+              <svg width="23" height="21">
                 <use href="img/sprite.svg#icons-like"></use>
               </svg>
               1350
@@ -86,7 +84,7 @@
             <h2 class="card__title">Местная растительность</h2>
             <p class="card__author">Автор фото: <span class="card__author-name">Сергей</span></p>
             <button class="card__likes" type="button">
-              <svg width="32" height="32">
+              <svg width="23" height="21">
                 <use href="img/sprite.svg#icons-like"></use>
               </svg>
               143
@@ -108,7 +106,7 @@
             <h2 class="card__title">Дорога на север</h2>
             <p class="card__author">Автор фото: <span class="card__author-name">Петр</span></p>
             <button class="card__likes" type="button">
-              <svg width="32" height="32">
+              <svg width="23" height="21">
                 <use href="img/sprite.svg#icons-like"></use>
               </svg>
               96
@@ -130,7 +128,7 @@
             <h2 class="card__title">Мост дьявола</h2>
             <p class="card__author">Автор фото: <span class="card__author-name">Антон</span></p>
             <button class="card__likes" type="button">
-              <svg width="32" height="32">
+              <svg width="23" height="21">
                 <use href="img/sprite.svg#icons-like"></use>
               </svg>
               254
@@ -142,7 +140,7 @@
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="presentation__video video">
-          <video src="" poster="img/video-poster-desktop.jpg"></video>
+          <video src="#"></video>
           <button class="video__controls" type="button">
             <svg width="48" height="54">
               <use href="img/sprite.svg#icons-player"></use>
@@ -185,7 +183,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__image" width="32" height="32">
+          <svg class="copyright__image" width="27" height="35">
             <use href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>

@@ -4,6 +4,22 @@
   overflow-x: hidden;
 
   background-color: @grey-light-basic;
+  background-image: url("../img/backgrounds/map-tablet@1x.jpg");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/map-tablet@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/backgrounds/map@1x.jpg");
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @tablet-width) {
+    background-image: url("../img/backgrounds/map@2x.jpg");
+  }
 }
 
 .map__iframe {

@@ -1,10 +1,12 @@
 .copyright__text {
-  margin-right: 4px;
+  margin-right: 10px;
 
   color: inherit;
 }
 
 .copyright__image {
+  flex-shrink: 0;
+
   fill: currentColor;
 }
 
@@ -19,7 +21,11 @@
     color: @blue-light-basic;
   }
 
-  &:focus,
+  &:focus-visible {
+    outline: 3px solid @blue-focus-outline;
+    outline-offset: 2px;
+  }
+
   &:active {
     color: @grey-copyright-active;
   }
